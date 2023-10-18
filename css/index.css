@@ -972,7 +972,6 @@ iframe {
 }
 .about-container div{
     color: var(--paragraph-color);
-    width: 600px;
     text-align: justify;
 }
 .about-container div *{
