@@ -955,7 +955,7 @@ iframe {
 
 /* --------- about -------------- */
 .about-container{
-    background-image: url("./images/landscape2.png");
+    background-image: url(./images/landscape2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -965,7 +965,7 @@ iframe {
     display: flex;
     align-items: center;
     border: 1px solid black;
-    margin-top: 2rem;
+    margin-block: 2rem;
     padding: 2rem;
     border-radius: 5px;
     background-color: var(--primary-color);
