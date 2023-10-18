@@ -74,7 +74,7 @@ header {
 
 /* ------------ banner ------------ */
 section {
-    background-image: url("../images/landscape2.png");
+    background-image: url("../images/landscape.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -970,7 +970,9 @@ iframe {
     border-radius: 5px;
     background-color: var(--primary-color);
 }
+
 .about-container div{
+    width: 600px;
     color: var(--paragraph-color);
     text-align: justify;
 }
