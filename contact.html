@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="./images/LOGO.jpg">
+    <link src="https://kit.fontawesome.com/d7421a9736.js" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d7421a9736.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./images/LOGO.jpg" alt="">
+            </div>
+            <div class="navigations">
+                <ul>
+                    <li><a href="index" target="_blank">Home</a></li>
+                    <li><a href="portfolio" target="_blank">Portfolio</a></li>
+                    <li><a href="about" target="_blank">About</a></li>
+                    <li style="background-color: #03c0cd; border-radius: 5px;"><a href="contact"
+                            target="_blank">CTA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ----------- Contact ------------------- -->
+    <h1 style="font-size: 50px; color: #343434; margin-top: 3rem; letter-spacing: 2px; text-align: center;">Contact</h1>
+    <div class="main-container" style="">
+        <div class="box" id="box1">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.7571917534174!2d123.72524267492139!3d13.144069387187349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a103baa4bbadf7%3A0xc71c65357a25e50a!2s519%20Boarding%20House!5e1!3m2!1sen!2sph!4v1696243876348!5m2!1sen!2sph"
+                width="600px" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="box" id="box2">
+            <div class="contact-container">
+                <form action="mailto:reychelleescota@gmail.com" method="post">
+                    <div class="name-email">
+                        <div class="horizontal">
+                            <input type="text" name="" id="" placeholder="Name">
+                            <input type="email" name="" id="" placeholder="Email">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------- footer ---------------- -->
+
+    <footer>
+        <div class="footer">
+            <div class="rows">
+                <a href="https://web.facebook.com/yllllllleeeee/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/ylle_verde" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ylleiz_zhh/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+
+            <div class="rows">
+                <ul>
+                    <li><a href="index" target="_blank">Home</a></li>
+                    <li><a href="portfolio" target="_blank">Portfolio</a></li>
+                    <li><a href="about" target="_blank">About</a></li>
+                    <li><a href="contact" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="rows">
+                Escota Copyright © 2023 All rights reserved || Designed By: Reychelle Escota
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var items = document.querySelectorAll("li");
+
+        function isItemInView(item) {
+            var rect = item.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isItemInView(items[i])) {
+                    items[i].classList.add("show");
+                }
+            }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    </script>
+</body>
+
+</html>
